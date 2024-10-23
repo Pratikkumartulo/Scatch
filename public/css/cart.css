@@ -1,0 +1,220 @@
+/* Product container */
+.product {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  gap:5px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Product image */
+.product-image {
+  width: 20%;
+  text-align: center;
+}
+
+.product-image img {
+  width: 100px;
+}
+
+/* Product details */
+.product-details {
+  width: 37%;
+  padding-left: 20px;
+}
+
+.product-title {
+  font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium";
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.product-description {
+  margin: 5px 0;
+  line-height: 1.4em;
+}
+
+/* Product price */
+.product-price {
+  width: 12%;
+  font-size: 16px;
+}
+
+/* Product quantity */
+.product-quantity {
+  width: 10%;
+}
+
+.product-quantity input {
+  width: 40px;
+  padding: 5px;
+  font-size: 14px;
+}
+
+/* Product removal */
+.product-removal {
+  width: 9%;
+}
+
+.remove-product {
+  border: none;
+  padding: 5px 10px;
+  background-color: #c66;
+  color: #fff;
+  font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium";
+  font-size: 12px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.remove-product:hover {
+  background-color: #a44;
+}
+
+/* Product line price */
+.product-line-price {
+  width: 12%;
+  text-align: right;
+  font-size: 16px;
+}
+
+
+.totals {
+  margin-top: 20px;
+}
+
+.totals-item {
+  margin-bottom: 10px;
+}
+
+.totals-item label {
+  float: left;
+  clear: both;
+  width: 79%;
+  text-align: right;
+}
+
+.totals-item .totals-value {
+  float: right;
+  width: 21%;
+  text-align: right;
+}
+
+.totals-item-total {
+  font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium";
+}
+
+/* Checkout button */
+.checkout {
+  float: right;
+  border: 0;
+  margin-top: 20px;
+  padding: 6px 25px;
+  background-color: #6b6;
+  color: #fff;
+  font-size: 25px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.checkout:hover {
+  background-color: #494;
+}
+
+/* Make adjustments for tablet */
+@media screen and (max-width: 768px) {
+  .product {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .product-image,
+  .product-details,
+  .product-price,
+  .product-quantity,
+  .product-removal,
+  .product-line-price {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+
+  .product-image img {
+    width: 80px;
+  }
+
+  .product-details {
+    padding-left: 0;
+  }
+
+  .product-quantity input {
+    width: 60px;
+  }
+
+  .product-line-price {
+    text-align: left;
+  }
+
+  .totals-item label {
+    width: 60%;
+  }
+
+  .totals-item .totals-value {
+    width: 40%;
+  }
+
+  .checkout {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+/* Make adjustments for phone */
+@media screen and (max-width: 480px) {
+  .product {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .product-image,
+  .product-details,
+  .product-price,
+  .product-quantity,
+  .product-removal,
+  .product-line-price {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+
+  .product-image img {
+    width: 60px;
+  }
+
+  .product-details {
+    padding-left: 0;
+  }
+
+  .product-quantity input {
+    width: 50px;
+  }
+
+  .product-line-price {
+    text-align: left;
+  }
+
+  .totals-item label {
+    width: 50%;
+  }
+
+  .totals-item .totals-value {
+    width: 50%;
+  }
+
+  .checkout {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
